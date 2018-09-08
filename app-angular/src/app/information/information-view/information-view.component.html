@@ -1,0 +1,11 @@
+<app-modal [title]="selectItem.title">
+  <figure class="figure">
+    <img [src]="selectItem.image" class="figure-img img-fluid rounded" [alt]="selectItem.title">
+    <figcaption class="figure-caption">{{ selectItem.description }}</figcaption>
+  </figure>
+</app-modal>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="onClickClose()">
+    Cerrar
+  </button>
+</div>

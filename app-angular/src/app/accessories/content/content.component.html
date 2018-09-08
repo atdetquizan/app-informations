@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="container mt-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page" *ngIf="navtitle">{{ navtitle }}</li>
+    </ol>
+    <ng-content></ng-content>
+</div>
+<app-footer></app-footer>

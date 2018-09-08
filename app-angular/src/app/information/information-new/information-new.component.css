@@ -1,0 +1,116 @@
+.file-content {
+  width: 100%;
+  border: 1px solid #ccc;
+  display: table;
+  height: 40px !important;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.file-content input {
+  position: absolute;
+  display: block !important;
+  width: 100% !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+}
+
+.file-content button {
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
+  top: 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.file-info {
+  padding: 5px 10px;
+  height: 100%;
+}
+
+.file-info label {
+  padding: 0px;
+  margin: 0px;
+}
+.file-items table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.file-items table {
+  border: 0.5px solid #e3e3e3 !important;
+}
+.file-items table tr td{
+  padding: 10px;
+}
+.file-items table tr td {
+  widows: 60%;
+}
+.file-items table tr td h6 {
+  color: #696969;
+  font-weight: 400 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-items table tr td h5 small {
+  color: #000;
+}
+.file-items table tr td:first-child {
+  width: 20%;
+  font-size: 30px;
+  color: red;
+}
+.file-items table tr td:last-child{
+  width: 20%;
+
+}
+.file-items table tr td button {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #626262;
+}
+
+
+
+/*INPUT FILE*/
+.input-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+  .input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .input-group>.input-control {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+  }
+  .button-group {
+    cursor: pointer;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+  }

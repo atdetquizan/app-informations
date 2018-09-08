@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light skip-blue">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/home">APP-Noticias</a>
+        <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [collapse]="!isNavbarCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Operaciones
+                    </a>
+                    <div *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="/sale"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>&nbsp;Ventas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-window-restore" aria-hidden="true"></i>&nbsp;Mantenedores
+                    </a>
+                    <div *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="/customer"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Cliente</a>
+                        <a class="dropdown-item" routerLink="/product"><i class="fa fa-linode" aria-hidden="true"></i>&nbsp;Producto</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/trademark"><i class="fa fa-trademark" aria-hidden="true"></i>&nbsp;Marcas</a>
+                        <a class="dropdown-item" routerLink="/saletype"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Tipo Ventas</a>
+                        <a class="dropdown-item" routerLink="/producttype"><i class="fa fa-product-hunt" aria-hidden="true"></i>&nbsp;Tipo Productos</a>
+                        <a class="dropdown-item" routerLink="/productcategory"><i class="fa fa-product-hunt" aria-hidden="true"></i>&nbsp;Categoria Productos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>&nbsp;Reportes
+                    </a>
+                    <div *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="#"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;Cliente</a>
+                        <a class="dropdown-item" routerLink="#"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;Producto</a>
+                        <a class="dropdown-item" routerLink="#"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;Ventas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="#"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;Grafico Ventas</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color='danger'>
+    <ion-title>
+        APP-Noticias
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content (ionScroll)="scrollHandler($event)">
+  <ion-list>
+    <ion-item *ngFor="let item of items | async">
+      <ion-card>
+
+        <ion-item>
+          <!-- <ion-avatar item-start>
+            <img [src]="item.image">
+          </ion-avatar> -->
+          <h1>{{ item.title }}</h1>
+        </ion-item>
+
+        <img [src]="item.image">
+
+        <ion-card-content>
+          {{ item.description }}
+        </ion-card-content>
+
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
